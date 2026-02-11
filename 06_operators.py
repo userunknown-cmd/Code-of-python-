@@ -19,7 +19,31 @@ print (e)
 
 
 # comparison operators
+
 # always return the boolean value
 
-comparison = 10>=6
+comparison =   10>=6
 print (comparison)
+
+# logical operartors
+
+e = True or False
+
+# Truth table of or 
+print("True or False is ", True or False)
+print("True or True is ",True or True)
+print("False or True is ", False or True)
+print("False or False is ", False or False)
+
+
+# truth table of and 
+print("True and False is ", True and False)
+print("True and True is ",True and True)
+print("False and True is ", False and True)
+print("False and False is ", False and False)
+
+# Not opertaor 
+# which make the true false and false get true the not operators is used
+
+print(not(True))
+
