@@ -13,3 +13,4 @@ print(Name[1:4])
 # note in simple slicing the last one is not included but in negative slicing the last one is also included
 # the nagative marking is started from the last end which of the letter from -1 nad goes upto the first letter
 # 
+
