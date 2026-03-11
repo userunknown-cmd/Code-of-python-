@@ -1,28 +1,35 @@
 
-#break statement 
+# #break statement 
 
-for i in range(100):
-    if(i==34):
-        break #exit the loop
-    print(i)
-
-
-# continue statement
-
-for i in range(100):
-    if(i ==34):
-        continue
-    print(i)
+# for i in range(100):
+#     if(i==34):
+#         break #exit the loop
+#     print(i)
 
 
+# # continue statement
 
-# pass statement 
+# for i in range(100):
+#     if(i ==34):
+#         continue
+#     print(i)
 
-for i in range (657):
-    pass  # it instruct to do nothing
 
 
-i = 0
-while(i<45):
-    print(i)
-    i += 1
+# # pass statement 
+
+# for i in range (657):
+#     pass  # it instruct to do nothing
+
+
+# i = 0
+# while(i<45):
+#     print(i)
+#     i += 1
+
+#  
+
+numbers = range (1,101,1)
+
+for number in numbers:
+    print(number)
