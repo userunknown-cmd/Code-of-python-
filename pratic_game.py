@@ -1,47 +1,34 @@
-import random
+print("🏰 Welcome to Treasure Hunt Escape!")
+print("You are trapped in a dungeon... Find your way out!\n")
 
-gold = 0
-caught = False
+choice1 = input("You see two doors: LEFT or RIGHT? ").lower()
 
-print("🕵️ Welcome to Thief vs Guard!")
-print("Steal 50 gold without getting caught!\n")
+if choice1 == "left":
+    print("\nYou enter a dark room...")
+    choice2 = input("You see a chest and a tunnel. Open CHEST or go TUNNEL? ").lower()
 
-while not caught and gold < 50:
-    print(f"\n💰 Current Gold: {gold}")
-    action = input("Choose action (sneak / run / hide): ").lower()
-
-    guard = random.choice(["search", "rest", "patrol"])
-
-    print(f"👮 Guard is: {guard}")
-
-    if action == "sneak":
-        if guard == "rest":
-            print("😎 Perfect sneak! +15 gold")
-            gold += 15
-        else:
-            print("⚠️ Risky move! +5 gold")
-            gold += 5
-
-    elif action == "run":
-        if guard == "search":
-            print("🚨 You got caught while running!")
-            caught = True
-        else:
-            print("🏃 Fast escape! +10 gold")
-            gold += 10
-
-    elif action == "hide":
-        if guard == "patrol":
-            print("😮 Guard found you hiding!")
-            caught = True
-        else:
-            print("🫥 Safe hide. No gold but safe.")
+    if choice2 == "chest":
+        print("\n💀 BOOM! The chest was trapped. Game Over.")
     
-    else:
-        print("❌ Invalid action")
+    elif choice2 == "tunnel":
+        print("\nYou crawl through the tunnel...")
+        choice3 = input("You find a river. SWIM or BUILD a raft? ").lower()
 
-# Game result
-if caught:
-    print("\n💀 GAME OVER! You got caught!")
+        if choice3 == "swim":
+            print("\n💀 A monster in the water eats you. Game Over.")
+        
+        elif choice3 == "build":
+            print("\n🏆 You safely cross the river and find TREASURE! YOU WIN!")
+        
+        else:
+            print("\nInvalid choice. Game Over.")
+
+    else:
+        print("\nInvalid choice. Game Over.")
+
+elif choice1 == "right":
+    print("\nYou walk into a room full of snakes...")
+    print("💀 You got bitten. Game Over.")
+
 else:
-    print("\n🏆 YOU WIN! You stole enough gold!")
+    print("\nInvalid choice. Game Over.")
