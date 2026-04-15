@@ -2,7 +2,7 @@ class Employes:
     language = "paython"
     salary = "1200 USD"
 
-    def __init__(self,name,salary,):
+    def __init__(self,name,salary,):  # this _init_ used here is a constructor here which is executed directly
         self.name = name
         self.salary = salary
         print("hello i have done this code to learn")
